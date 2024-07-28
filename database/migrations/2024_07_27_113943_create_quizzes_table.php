@@ -16,6 +16,7 @@ return new class extends Migration
             $table->foreignId('course_id')->constrained()->nullable();
             $table->string('title')->nullable();
             $table->string('type')->nullable();
+            $table->string('chrono')->nullable()->comment('Temps');
             $table->timestamps();
         });
     }
